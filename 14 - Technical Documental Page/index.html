@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Technical Documentation</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>Python Documentation</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#Introduction">Introduction</a>
+                </li>
+                <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+                <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+                <li>
+                    <a class="nav-link" href="#Control_Flow">Control Flow</a>
+                </li>
+                <li><a class="nav-link" href="#Functions">Functions</a></li>
+                <li><a class="nav-link" href="#Modules">Modules</a></li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="Introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>
+                        Python is an interpreted, high-level and general-purpose
+                        programming language. Python's design philosophy
+                        emphasizes code readability with its notable use of
+                        significant whitespace.
+                    </p>
+                    <p>
+                        Python is dynamically-typed and garbage-collected. It
+                        supports multiple programming paradigms, including
+                        structured (particularly, procedural), object-oriented
+                        and functional programming.
+                    </p>
+                </article>
+            </section>
+            <section class="main-section" id="Syntax">
+                <header>Syntax</header>
+                <article>
+                    <p>
+                        Python uses indentation to define code blocks, instead
+                        of curly braces or keywords.
+                    </p>
+                    <p>For example:</p>
+                    <code> def greet(name): print(f"Hello, {name}!") </code>
+                </article>
+            </section>
+            <section class="main-section" id="Data_Types">
+                <header>Data Types</header>
+                <article>
+                    <p>Python supports several data types, including:</p>
+                    <ul>
+                        <li>int</li>
+                        <li>float</li>
+                        <li>str</li>
+                        <li>list</li>
+                        <li>tuple</li>
+                        <li>dict</li>
+                    </ul>
+                    <p>Example of a dictionary:</p>
+                    <code> my_dict = {"name": "Alice", "age": 25} </code>
+                </article>
+            </section>
+            <section class="main-section" id="Control_Flow">
+                <header>Control Flow</header>
+                <article>
+                    <p>Python provides several control flow statements:</p>
+                    <ul>
+                        <li>if</li>
+                        <li>for</li>
+                        <li>while</li>
+                        <li>try</li>
+                    </ul>
+                    <p>Example of an if statement:</p>
+                    <code>
+                        if age > 18: print("Adult") else: print("Minor")
+                    </code>
+                </article>
+            </section>
+            <section class="main-section" id="Functions">
+                <header>Functions</header>
+                <article>
+                    <p>Functions are defined using the def keyword:</p>
+                    <code> def add(a, b): return a + b </code>
+                </article>
+            </section>
+            <section class="main-section" id="Modules">
+                <header>Modules</header>
+                <article>
+                    <p>
+                        Modules are Python files that can be imported into other
+                        Python files. They are useful for organizing code.
+                    </p>
+                    <p>Example:</p>
+                    <code> import math print(math.sqrt(16)) </code>
+                </article>
+            </section>
+        </main>
+    </body>
+</html>
