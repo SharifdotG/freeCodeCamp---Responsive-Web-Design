@@ -1,0 +1,209 @@
+/* Global styles */
+@import "https://fonts.googleapis.com/css?family=Lato:400,700";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+button,
+input {
+    background-color: #f4f4f4;
+    font-family: "Cascadia Code", sans-serif;
+}
+
+#page-wrapper {
+    position: relative;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Header styles */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-height: 75px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    font-weight: 700;
+}
+
+@media (max-width: 650px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Hero section */
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    background: linear-gradient(45deg, purple 25%, blue);
+    color: #fff;
+    padding: 20px;
+}
+
+#hero h2 {
+    margin-bottom: 20px;
+}
+
+#hero input[type="email"] {
+    padding: 10px;
+    width: 300px;
+    max-width: 90%;
+    margin-bottom: 10px;
+}
+
+#hero input[type="submit"] {
+    padding: 10px 20px;
+    background: linear-gradient(
+        45deg,
+        rgb(97, 219, 203) 25%,
+        rgb(15, 211, 103)
+    );
+    color: navy;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#hero input[type="submit"]:hover {
+    background-color: #555;
+}
+
+/* Features section */
+#features {
+    margin: 40px 0;
+}
+
+.grid {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.icon {
+    flex: 0 0 50px;
+    margin-right: 20px;
+    color: rgb(62, 0, 179);
+}
+
+.desc h2 {
+    margin-bottom: 10px;
+}
+
+@media (max-width: 600px) {
+    .grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon {
+        margin-bottom: 10px;
+    }
+}
+
+/* Video section */
+#how-it-works {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Pricing section */
+#pricing {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product {
+    flex: 0 0 30%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.product .level {
+    background: linear-gradient(45deg, purple 25%, blue);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.product button {
+    padding: 10px 20px;
+    background: linear-gradient(45deg, purple 25%, blue);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.product button:hover {
+    background-color: #555;
+}
+
+@media (max-width: 800px) {
+    #pricing {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        margin-bottom: 20px;
+        width: 80%;
+    }
+}
+
+/* Footer styles */
+footer {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 10px;
+}
+
+footer span {
+    font-size: 0.8em;
+    color: #666;
+}

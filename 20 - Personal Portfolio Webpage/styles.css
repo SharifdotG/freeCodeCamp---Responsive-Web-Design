@@ -1,0 +1,254 @@
+/* Custom properties/variables */
+:root {
+    --main-white: #f0f0f0;
+    --main-red: #be3144;
+    --main-blue: #45567d;
+    --main-gray: #303841;
+}
+
+/* Base reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* box-sizing and font sizing */
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/* Responsive font sizing */
+@media (max-width: 75em) {
+    html {
+        font-size: 60%;
+    }
+}
+
+@media (max-width: 61.25em) {
+    html {
+        font-size: 58%;
+    }
+}
+
+@media (max-width: 28.75em) {
+    html {
+        font-size: 55%;
+    }
+}
+
+/* Base styles */
+body {
+    font-family: "Cascadia Code", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--main-white);
+}
+
+h1,
+h2 {
+    font-family: "Cascadia Code", sans-serif;
+    font-weight: 700;
+    text-align: center;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4.2rem;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: var(--main-white);
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* nav */
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--main-red);
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 10;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 2rem;
+}
+
+@media (max-width: 28.75em) {
+    .nav {
+        justify-content: center;
+    }
+
+    .nav-list {
+        margin: 0 1rem;
+    }
+}
+
+.nav-list a {
+    display: block;
+    font-size: 2.2rem;
+    padding: 2rem;
+}
+
+.nav-list a:hover {
+    background: var(--main-blue);
+}
+
+/* Welcome section */
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 0 2rem;
+    text-align: center;
+    background: var(--main-gray);
+}
+
+.welcome-section p {
+    font-size: 2.8rem;
+}
+
+/* Projects section */
+.projects-section {
+    background: var(--main-blue);
+    padding: 5rem 0;
+}
+
+.projects-section-header {
+    margin-bottom: 4rem;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-gap: 2rem;
+    margin: 0 2rem;
+}
+
+.project {
+    background: var(--main-gray);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    transition: transform 0.2s;
+}
+
+.project:hover {
+    transform: scale(1.02);
+}
+
+.project-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8rem;
+    font-size: 2rem;
+}
+
+.project-image {
+    width: 100%;
+    height: 20rem;
+}
+
+.btn-show-all {
+    display: block;
+    width: max-content;
+    margin: 3rem auto;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border: 1px solid var(--main-white);
+    border-radius: 2rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.btn-show-all:hover {
+    background: var(--main-white);
+    color: var(--main-gray);
+}
+
+/* Contact section */
+.contact-section {
+    padding: 5rem 0;
+    background: var(--main-gray);
+}
+
+.contact-section-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.contact-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact-details {
+    display: block;
+    width: max-content;
+    margin: 1rem 0;
+    padding: 1rem 2rem;
+    font-size: 2rem;
+    border: 1px solid var(--main-white);
+    border-radius: 2rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.contact-details:hover {
+    background: var(--main-white);
+    color: var(--main-gray);
+}
+
+/* Footer section */
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    background: var(--main-red);
+}
+
+footer p {
+    font-size: 1.4rem;
+}
+
+footer a {
+    font-size: 1.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline-block;
+    padding: 0.3rem 0;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: var(--main-blue);
+}
+
+footer i {
+    color: var(--main-white);
+}
